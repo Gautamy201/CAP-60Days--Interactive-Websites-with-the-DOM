@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mini Calculator</title>
+  </head>
+  <body>
+    <input id="fistNo" type="text" placeholder="enter 1st number" />
+    <input id="secondNo" type="text" placeholder="enter 2nd number" />
+    <br />
+    <br />
+    <button onclick="add()">Add</button>
+    <button onclick="sub()">Subtract</button>
+    <button onclick="mult()">Multiply</button>
+    <button onclick="div()">Divide</button>
+  </body>
+  <script>
+    let fistNumber = document.getElementById("fistNo");
+    let secondNumber = document.getElementById("secondNo");
+
+    function add() {
+      let result = Number(fistNumber.value) + Number(secondNumber.value);
+      alert(result);
+    }
+
+    function sub() {
+      let result = Number(fistNumber.value) - Number(secondNumber.value);
+      alert(result);
+    }
+
+    function mult() {
+      let result = Number(fistNumber.value) * Number(secondNumber.value);
+      alert(result);
+    }
+
+    function div() {
+      let result = Number(fistNumber.value) / Number(secondNumber.value);
+      alert(result);
+    }
+  </script>
+</html>
